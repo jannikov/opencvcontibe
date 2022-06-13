@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name             = 'opencvcontribe'
+    s.name             = 'opencvcontibe'
     s.version          = '1.0.0'
     s.summary          = 'OpenCV (Computer Vision) for iOS as a dynamic framework.'
 
