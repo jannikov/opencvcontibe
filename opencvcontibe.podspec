@@ -41,6 +41,7 @@ OpenCV: open source computer vision library
     s.prepare_command = <<-CMD
         git submodule init
         git submodule update
+        git submodule add --force https://github.com/opencv/opencv.git opencv
         python opencv/platforms/ios/build_framework.py ios --dynamic
         cp -a ./ios/opencv2.framework ./opencv2.framework
     CMD
