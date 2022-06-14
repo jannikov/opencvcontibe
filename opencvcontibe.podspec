@@ -16,7 +16,7 @@ OpenCV: open source computer vision library
     s.authors          = 'opencv.org'
     s.source           = { :git => 'https://github.com/jannikov/opencvcontibe.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = "8.0"
+    s.ios.deployment_target = "11.0"
     s.source_files = "opencv2.framework/Headers/**/*{.h,.hpp}"
     #s.public_header_files = "opencv2.framework/Headers/**/*{.h,.hpp}"
     s.preserve_paths = "opencv2.framework"
