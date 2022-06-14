@@ -12,7 +12,7 @@ OpenCV: open source computer vision library
     DESC
 
     s.homepage         = 'https://github.com/jannikov/opencvcontibe'
-    s.license          = { :type => '3-clause BSD', :file => 'LICENSE' }
+    #s.license          = { :type => '3-clause BSD', :file => 'LICENSE' }
     s.authors          = 'opencv.org'
     s.source           = { :git => 'https://github.com/jannikov/opencvcontibe.git', :tag => s.version.to_s }
 
