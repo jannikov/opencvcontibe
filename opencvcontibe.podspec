@@ -38,9 +38,9 @@ OpenCV: open source computer vision library
         "UIKit"
     ]
 
-    s.prepare_command = <<-CMD
-        git clone https://github.com/opencv/opencv.git opencv
-        python opencv/platforms/ios/build_framework.py ios --dynamic --verbose
-        cp -a ./ios/opencv2.framework ./opencv2.framework
-    CMD
+    # s.prepare_command = <<-CMD
+    #     git clone https://github.com/opencv/opencv.git opencv
+    #     python opencv/platforms/ios/build_framework.py ios --dynamic --verbose
+    #     cp -a ./ios/opencv2.framework ./opencv2.framework
+    # CMD
 end
