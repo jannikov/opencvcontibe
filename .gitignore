@@ -3,7 +3,7 @@
 
 ## Build generated
 ios/
-opencv2.framework/
+#opencv2.framework/
 build/
 DerivedData
 

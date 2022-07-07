@@ -12,11 +12,11 @@ OpenCV: open source computer vision library
     DESC
 
     s.homepage         = 'https://github.com/jannikov/opencvcontibe'
-    s.license          = { :type => '3-clause BSD', :file => 'LICENSE' }
+    s.license          = 'MIT'
     s.authors          = 'opencv.org'
     s.source           = { :git => 'https://github.com/jannikov/opencvcontibe.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = "8.0"
+    s.ios.deployment_target = "11.0"
     s.source_files = "opencv2.framework/Headers/**/*{.h,.hpp}"
     #s.public_header_files = "opencv2.framework/Headers/**/*{.h,.hpp}"
     s.preserve_paths = "opencv2.framework"
@@ -38,10 +38,9 @@ OpenCV: open source computer vision library
         "UIKit"
     ]
 
-    s.prepare_command = <<-CMD
-        git submodule init
-        git submodule update
-        /opt/homebrew/Caskroom/miniforge/base/bin/python opencv/platforms/ios/build_framework.py ios --dynamic
-        cp -a ./ios/opencv2.framework ./opencv2.framework
-    CMD
+    # s.prepare_command = <<-CMD
+    #     git clone https://github.com/opencv/opencv.git opencv
+    #     python opencv/platforms/ios/build_framework.py ios --dynamic --verbose
+    #     cp -a ./ios/opencv2.framework ./opencv2.framework
+    # CMD
 end
